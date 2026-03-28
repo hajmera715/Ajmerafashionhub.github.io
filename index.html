@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajmera Fashion Hub | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Ajmera Fashion Hub</div>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search for brands, products...">
+        <button onclick="handleSearch()"><i class="fa fa-search"></i></button>
+    </div>
+
+    <nav>
+        <div class="menu-toggle" onclick="toggleMenu()"><i class="fa fa-bars"></i></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="brands.html">Brands</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="container" style="background: #eee; height: 300px; display: flex; align-items: center; justify-content: center; text-align: center;">
+        <div>
+            <h1>NEW ARRIVALS 2026</h1>
+            <p>Upgrade your wardrobe with International & Indian Brands</p>
+            <br>
+            <a href="products.html" style="background: var(--accent); color: white; padding: 10px 20px; text-decoration: none;">Shop Now</a>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>Featured Brands</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Nike">
+                <h3>Nike</h3>
+                <a href="products.html" class="btn">View Products</a>
+            </div>
+            </div>
+    </section>
+
+    <a href="cart.html" class="floating-cart">
+        <i class="fa fa-shopping-cart"></i>
+        <span class="cart-count">0</span>
+    </a>
+
+    <footer>
+        <p>&copy; 2026 Ajmera Fashion Hub. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
