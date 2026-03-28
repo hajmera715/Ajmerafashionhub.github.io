@@ -1,0 +1,17 @@
+// Inside cart.html script section
+function displayCart() {
+    const container = document.getElementById('cartItems');
+    let total = 0;
+    container.innerHTML = cart.map((item, index) => {
+        total += item.price * item.quantity;
+        return `
+            <div class="cart-item">
+                <img src="${item.img}" width="50">
+                <span>${item.name}</span>
+                <span>₹${item.price}</span>
+                <button onclick="removeItem(${index})">Remove</button>
+            </div>
+        `;
+    }).join('');
+    document.getElementById('totalPrice').innerText = total;
+}
