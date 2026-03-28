@@ -1,0 +1,31 @@
+<section class="container">
+    <div style="text-align: center; background: var(--accent); color: white; padding: 40px; border-radius: 10px;">
+        <h1>MEGA SEASONAL SALE</h1>
+        <p>Ends in: <span id="timer" style="font-weight: bold; font-size: 1.5rem;">00:00:00</span></p>
+    </div>
+
+    <div class="grid" style="margin-top: 30px;">
+        <div class="card" style="border: 2px dashed var(--accent);">
+            <h2>35% OFF</h2>
+            <p>On all International Brands</p>
+            <button class="btn">Use Code: AJMERA35</button>
+        </div>
+        <div class="card" style="border: 2px dashed var(--accent);">
+            <h2>Buy 2 Get 1</h2>
+            <p>Budget Friendly Collection</p>
+            <button class="btn">Claim Offer</button>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Simple 24h Countdown
+    let time = 86400; 
+    setInterval(() => {
+        time--;
+        let h = Math.floor(time / 3600);
+        let m = Math.floor((time % 3600) / 60);
+        let s = time % 60;
+        document.getElementById('timer').innerText = `${h}h ${m}m ${s}s`;
+    }, 1000);
+</script>
